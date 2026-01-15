@@ -2,7 +2,14 @@ export function add(a: number, b: number): number {
   return a + b;
 }
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
+// this line below is used to run the script directly, if it's not the case, the script will be imported as a module
+// It is analogous to the main function in other programming languages
+// Python example:
+// if __name__ == "__main__":
+// GO example:
+// func main() {
+//   fmt.Println("Hello, World!")
+// }
 if (import.meta.main) {
   // Hello world message
   console.log("Hello from Deno! 🦕");
